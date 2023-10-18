@@ -1,3 +1,5 @@
-const Dashboard = () => {};
+const Dashboard = () => {
+  <>Dashboard here</>;
+};
 
 export default Dashboard;
