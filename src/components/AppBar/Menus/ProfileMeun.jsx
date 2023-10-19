@@ -77,6 +77,11 @@ const ProfileMenu = () => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
+        <Link href="/dashboard" underline="none">
+          <MenuItem onClick={handleClose}>
+            <Avatar /> Dashboard
+          </MenuItem>
+        </Link>
         <MenuItem onClick={handleClose}>
           <Avatar /> Profile
         </MenuItem>
