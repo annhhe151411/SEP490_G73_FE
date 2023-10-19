@@ -13,8 +13,11 @@ import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 // format date
 import format from "date-fns/format";
+//
+import { getAllUser } from "~/axios/api/UserService";
 
-const TableUsers = (props) => {
+const TableUsers = async (props) => {
+  let res = await getAllUser();
   const {
     count = 0,
     items = [],
